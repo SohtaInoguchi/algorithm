@@ -1,3 +1,7 @@
+// https://leetcode.com/problems/subsets/
+
+// Find power set of given array
+
 /**
  * @param {number[]} nums
  * @return {number[][]}
