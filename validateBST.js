@@ -20,7 +20,7 @@
  * @return {boolean}
  */
 
- const validateAgainstRootVal = (root) => {
+ const traverseInorder = (root) => {
   const values = [];
   const stack = [];
   let done = false;
@@ -45,7 +45,7 @@
 }
 
 var isValidBST = function(root) {
-  const nodeValuesInorder = validateAgainstRootVal(root);
+  const nodeValuesInorder = traverseInorder(root);
   let valueTocompare = nodeValuesInorder[0];
   for (let i = 1; i < nodeValuesInorder.length; i++) {
       if (valueTocompare < nodeValuesInorder[i] === false) {
